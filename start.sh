@@ -5,7 +5,7 @@ xcode-select --install
 
 # Homebrew
 echo "--- Installing Homebrew ---"
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "--- Installing formulae and casks ---"
 brew install $(cat brew/formulae)
