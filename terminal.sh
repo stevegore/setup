@@ -20,6 +20,6 @@ cp iTerm/com.googlecode.iterm2.plist ~/.iTerm
 # TODO
 # Set iTerm to load preferences from ~/.iTerm
 # SSH keys, GPG keys
-# Add keys to GHE
+# Add keys to any private GitHub instances
 # Tweak git config
 # Tweak CDPATH
