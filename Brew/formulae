@@ -10,7 +10,7 @@ helm
 htop
 httpie
 jq
-k9s
+derailed/k9s/k9s
 kompose
 kubectx
 kubernetes-cli
@@ -20,7 +20,6 @@ kustomize
 lsd
 nmap
 openssl
-powerlevel10k
 pstree
 pyenv
 python
