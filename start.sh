@@ -17,4 +17,4 @@ if [ $? != 0 ]; then
 fi
 
 pushd setup
-source apps.sh
+source configure.sh
