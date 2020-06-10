@@ -10,5 +10,11 @@ echo "--- Installing Homebrew ---"
 echo "--- Installing git and cloning set up repository ---"
 brew install git
 git clone git@github.com:stevegore/setup.git setup
+
+if [ $? != 0 ]; then
+    echo "Clone was not successful, exiting..."
+    exit 1
+fi
+
 pushd setup
 source apps.sh
