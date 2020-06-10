@@ -1,0 +1,13 @@
+[user]
+	signingkey = 59A8A3E8238C095E
+	name = Steve Gore
+	email = steve.j.gore@gmail.com
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[push]
+	default = current
