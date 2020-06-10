@@ -29,7 +29,7 @@
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
-	<true/>
+	<false/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
