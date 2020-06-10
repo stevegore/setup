@@ -34,6 +34,9 @@ cp Shell/oh-my-zsh.sh ~/.oh-my-zsh
 
 cp iTerm/com.googlecode.iterm2.plist ~/Library/Preferences
 
+echo "--- macOS Preferences ---"
+source macOS/set-defaults.sh
+
 # TODO
 # Subpixel antialiasing needs to be turned on manually in iTerm
 # Download SSH keys, GPG keys
