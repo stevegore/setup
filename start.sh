@@ -7,7 +7,7 @@ xcode-select --install
 echo "--- Installing Homebrew ---"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-echo "--- Installing formulae and casks ---"
+echo "--- Installing git and cloning set up repository ---"
 brew install git
 git clone git@github.com:stevegore/setup.git setup
 pushd setup
