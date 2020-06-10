@@ -90,6 +90,15 @@ listening() {
     fi
 }
 
+# https://pastebin.com/0Ng8Cex6
+setopt hist_reduce_blanks # remove superfluous blanks from history items
+setopt inc_append_history # save history entries as soon as they are entered
+setopt share_history # share history between different instances of the shell
+
+setopt auto_list # automatically list choices on ambiguous completion
+setopt auto_menu # automatically use menu completion
+setopt always_to_end # move cursor to end if word had one match
+
 ssh-add -q ~/.ssh/steve_gore &> /dev/null
 
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
