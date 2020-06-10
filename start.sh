@@ -9,4 +9,6 @@ echo "--- Installing Homebrew ---"
 
 echo "--- Installing formulae and casks ---"
 brew install git
-git clone git@github.com:stevegore/setup.git
+git clone git@github.com:stevegore/setup.git setup
+pushd setup
+source apps.sh
