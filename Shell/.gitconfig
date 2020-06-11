@@ -1,13 +1,29 @@
 [user]
-	signingkey = 59A8A3E8238C095E
-	name = Steve Gore
-	email = steve.j.gore@gmail.com
+    signingkey = 59A8A3E8238C095E
+    name = Steve Gore
+    email = steve.j.gore@gmail.com
 [commit]
-	gpgsign = true
+    gpgsign = true
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
 [push]
-	default = current
+    default = current
+[core]
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+    ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    meta = brightblue
+    frag = 14 bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
