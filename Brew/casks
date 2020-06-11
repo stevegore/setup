@@ -9,6 +9,7 @@ firefox
 forklift
 gpg-suite-no-mail
 homebrew/homebrew-cask-drivers/logitech-options
+homebrew/homebrew-cask-drivers/logitech-unifying
 insomnia
 istat-menus
 iterm2
@@ -20,6 +21,7 @@ oracle-jdk
 pgadmin4
 proxifier
 slack
+spotify
 standard-notes
 virtualbox
 visual-studio-code
