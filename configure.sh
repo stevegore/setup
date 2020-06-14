@@ -43,6 +43,6 @@ source macOS/set-defaults.sh
 # Add keys to any private GitHub instances
 # Tweak git config
 # Tweak CDPATH
-# Install purchases from macOS App Store
+# Install purchases from macOS App Store - Paste, Microsoft Remote Desktop, DaisyDisk (Personal: iStumbler, HP Easy Scan)
 # Add all licence keys to apps
 # Configure installed apps (VS Code, FireFox, Proxifier, OmniFocus, Enpass, ForkLift, etc.)
