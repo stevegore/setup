@@ -1,0 +1,18 @@
+# Additional casks for personal laptop
+tap "homebrew/cask-drivers"
+cask "garmin-express"
+cask "kindle"
+cask "little-snitch"
+cask "logos"
+cask 'microsoft-office'
+cask "mullvadvpn"
+cask "onedrive"
+cask "paragon-ntfs"
+cask "skype"
+cask "steam"
+cask "synergy"
+cask "transmission"
+cask "vlc"
+cask "zoomus"
+mas "HP Easy Scan", id: 967004861
+mas "HP Smart", id: 1474276998

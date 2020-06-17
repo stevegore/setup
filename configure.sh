@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "--- Installing formulae and casks ---"
-brew install $(cat brew/formulae)
-brew cask install --force $(cat brew/casks)
+echo "--- Installing Brew packages ---"
+brew bundle install --file Brew/Brewfile
 
 echo "--- Oh-my-zsh ---"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
