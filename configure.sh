@@ -50,3 +50,4 @@ source macOS/set-defaults.sh
 # Install purchases from macOS App Store - Paste, (Personal:  HP Easy Scan)
 # Add all licence keys to apps
 # Configure installed apps (VS Code, FireFox, Proxifier, OmniFocus, Enpass, ForkLift, etc.)
+# Download album from here for screensaver - https://www.flickr.com/photos/152977080@N03/albums/72157681812020976
