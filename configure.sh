@@ -18,6 +18,10 @@ if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
+echo "--- Paste.app ---"
+curl -O https://downloads.pasteapp.io/public/Paste.dmg
+open Paste.dmg
+
 # Install fonts
 echo "--- Fonts ---"
 mkdir -p ~/Library/Fonts
@@ -42,6 +46,7 @@ source macOS/set-defaults.sh
 # Add keys to any private GitHub instances
 # Tweak git config
 # Tweak CDPATH
-# Install purchases from macOS App Store - Paste, Microsoft Remote Desktop, DaisyDisk (Personal: iStumbler, HP Easy Scan)
+# Sign into mac App Store
+# Install purchases from macOS App Store - Paste, (Personal:  HP Easy Scan)
 # Add all licence keys to apps
 # Configure installed apps (VS Code, FireFox, Proxifier, OmniFocus, Enpass, ForkLift, etc.)
