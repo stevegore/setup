@@ -11,6 +11,8 @@
     process = git-lfs filter-process
 [push]
     default = current
+[pull]
+    rebase = false
 [core]
     pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
