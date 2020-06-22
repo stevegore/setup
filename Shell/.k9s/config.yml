@@ -1,0 +1,312 @@
+k9s:
+  refreshRate: 2
+  headless: false
+  readOnly: false
+  noIcons: false
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: -1
+    fullScreenLogs: false
+    textWrap: false
+    showTime: false
+  currentContext: gke_q-ctrl-api-development_australia-southeast1_app-staging
+  currentCluster: gke_q-ctrl-api-development_australia-southeast1_app-staging
+  clusters:
+    gke_q-ctrl-api-development_australia-southeast1-a_jobs-gpu:
+      namespace:
+        active: jobs-development
+        favorites:
+        - redisinsight
+        - jobs-development
+        - all
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-api-development_australia-southeast1-c_appdev:
+      namespace:
+        active: ""
+        favorites:
+        - ingress-nginx
+        - all
+        - kube-system
+        - cert-manager
+        - secret-source
+        - vault
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-api-development_australia-southeast1-c_fstdev:
+      namespace:
+        active: secret-source
+        favorites:
+        - secret-source
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-api-development_australia-southeast1_app-staging:
+      namespace:
+        active: qctrl-platform
+        favorites:
+        - all
+        - external-dns
+        - qctrl-platform
+        - default
+      view:
+        active: ns
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-api-production_us-central1-f_jobs-gpu:
+      namespace:
+        active: jobs-production
+        favorites:
+        - jobs-production
+        - all
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-api-production_us-central1_app-production:
+      namespace:
+        active: kube-system
+        favorites:
+        - kube-system
+        - external-dns
+        - qctrl-platform
+        - all
+        - default
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-documentation_us-central1-c_docs-development:
+      namespace:
+        active: ""
+        favorites:
+        - all
+        - docs-dev
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-documentation_us-central1-c_docs-production:
+      namespace:
+        active: ""
+        favorites:
+        - all
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-gke-tf-test_us-central1_appdev:
+      namespace:
+        active: ""
+        favorites:
+        - all
+        - external-dns
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-jupyterhub_us-central1-a_jhub:
+      namespace:
+        active: default
+        favorites:
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-jupyterhub_us-central1-a_jhub-app-dev:
+      namespace:
+        active: jhub
+        favorites:
+        - jhub
+        - all
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-jupyterhub_us-central1-a_jhub-app-prod:
+      namespace:
+        active: jhub
+        favorites:
+        - jhub
+        - all
+        - default
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-jupyterhub_us-central1-a_jhub-internal-prod:
+      namespace:
+        active: ""
+        favorites:
+        - all
+        - jhub
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-jupyterhub_us-central1-b_jhub-internal-dev:
+      namespace:
+        active: jhub
+        favorites:
+        - jhub
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-pypi-cloud_australia-southeast1-c_pypi:
+      namespace:
+        active: pypi
+        favorites:
+        - all
+        - pypi
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    gke_q-ctrl-wiki_us-central1-c_wiki-prod:
+      namespace:
+        active: wiki
+        favorites:
+        - wiki
+        - all
+        - default
+      view:
+        active: ctx
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70

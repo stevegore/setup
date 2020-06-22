@@ -34,6 +34,7 @@ for f in .aliases.sh .gitconfig .p10k.zsh .zshrc; do
     cp Shell/$f ~
 done
 cp Shell/oh-my-zsh.sh ~/.oh-my-zsh
+cp -r Shell/.k9s ~
 
 cp iTerm/com.googlecode.iterm2.plist ~/Library/Preferences
 
@@ -51,3 +52,4 @@ source macOS/set-defaults.sh
 # Add all licence keys to apps
 # Configure installed apps (VS Code, FireFox, Proxifier, OmniFocus, Enpass, ForkLift, etc.)
 # Download album from here for screensaver - https://www.flickr.com/photos/152977080@N03/albums/72157681812020976
+# Set Login Items for user - incl. iTerm, Enpass etc. - hidden
