@@ -29,7 +29,7 @@ cp Fonts/* ~/Library/Fonts
 
 echo "--- Preferences ---"
 # Copy preferences over
-for f in .aliases.sh .gitconfig .p10k.zsh .zshrc; do
+for f in .aliases.sh .gitconfig .p10k.zsh .zshrc .vimrc; do
     echo "Copying $f"
     cp Shell/$f ~
 done
