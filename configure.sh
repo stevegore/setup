@@ -43,7 +43,8 @@ source macOS/set-defaults.sh
 # Tweak git config to include GPG key
 # Tweak CDPATH
 # Sign into mac App Store
-# Install purchases from macOS App Store
+# VS Code profile sync
+# Firefox profile sync
 # Add all licence keys to apps
 # Configure installed apps (VS Code, FireFox, Proxifier, OmniFocus, Enpass, ForkLift, etc.)
 # Download album from here for screensaver - https://www.flickr.com/photos/152977080@N03/albums/72157681812020976
