@@ -23,7 +23,7 @@
     newNormal = green bold
     newHighlight = green bold 22
 [color "diff"]
-    meta = brightblue
+    meta = blue
     frag = 14 bold
     commit = yellow bold
     old = red bold

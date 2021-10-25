@@ -40,7 +40,7 @@ export ZSH=~/.oh-my-zsh
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -96,10 +96,12 @@ setopt inc_append_history # save history entries as soon as they are entered
 setopt share_history # share history between different instances of the shell
 
 setopt auto_list # automatically list choices on ambiguous completion
-setopt auto_menu # automatically use menu completion
-setopt always_to_end # move cursor to end if word had one match
+# setopt auto_menu # automatically use menu completion
+# setopt always_to_end # move cursor to end if word had one match
 
 ssh-add -q ~/.ssh/steve_gore &> /dev/null
+
+# eval "$(pyenv init -)"
 
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
@@ -109,3 +111,6 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export AWS_REGION=ap-southeast-2
+export AWS_DEFAULT_REGION=$AWS_REGION
